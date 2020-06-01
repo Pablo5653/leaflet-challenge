@@ -38,7 +38,7 @@ function markerSize(magnitud) {
                
                 
     onEachFeature: function(feature, layer) {
-      layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place+ "<br>Title: " + feature.properties.title);
+      layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place+ "<br>estatus: " + feature.properties.status);
     }
   }).addTo(map);
 
